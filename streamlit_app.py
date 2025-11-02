@@ -48,7 +48,7 @@ def github_api_request(endpoint, method="GET", data=None):
 
 def get_file_sha(file_path):
     """Mendapatkan SHA hash file yang ada di GitHub"""
-    endpoint = f"contents/{file_path}?ref={GITHUB_BRANCH}"
+    endpoint = f"{file_path}?ref={GITHUB_BRANCH}"
     result = github_api_request(endpoint)
     return result.get("sha") if result else None
 
@@ -75,13 +75,13 @@ def upload_to_github(file_path, content, commit_message):
     if sha:
         data["sha"] = sha
     
-    endpoint = f"contents/{file_path}"
+    endpoint = f"{file_path}"
     result = github_api_request(endpoint, "PUT", data)
     return result is not None
 
 def download_from_github(file_path):
     """Download file dari GitHub"""
-    endpoint = f"contents/{file_path}?ref={GITHUB_BRANCH}"
+    endpoint = f"{file_path}?ref={GITHUB_BRANCH}"
     result = github_api_request(endpoint)
     
     if result and "content" in result:
@@ -92,7 +92,7 @@ def download_from_github(file_path):
 
 def list_github_files(folder_path):
     """Mendapatkan daftar file di folder GitHub"""
-    endpoint = f"contents/{folder_path}?ref={GITHUB_BRANCH}"
+    endpoint = f"{folder_path}?ref={GITHUB_BRANCH}"
     result = github_api_request(endpoint)
     
     if result and isinstance(result, list):
