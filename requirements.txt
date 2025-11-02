@@ -6,10 +6,22 @@ requests==2.31.0
 beautifulsoup4==4.12.2
 
 # Data Manipulation & Analysis
+# Gunakan Python 3.11 atau 3.12 (Streamlit Cloud mendukung)
+# Tambahkan ini di file requirements.txt
+scikit-learn==1.5.2
+numpy<2.0
+scipy
+joblib
+threadpoolctl
 
-pandas>=2.0.0
-numpy==1.26.0
-scikit-learn
+# Jika kamu pakai pandas, tambahkan:
+pandas>=1.5.0
+
+# Jika pakai matplotlib / seaborn:
+matplotlib
+seaborn
+
+
 
 # Natural Language Processing
 nltk==3.8.1
