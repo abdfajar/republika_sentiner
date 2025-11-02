@@ -1,28 +1,28 @@
 # Web Framework & UI
-streamlit>=1.28.0
+streamlit==1.28.0
 
 # Web Scraping & HTTP
-requests>=2.31.0
-beautifulsoup4>=4.12.0
+requests==2.31.0
+beautifulsoup4==4.12.2
 
 # Data Manipulation & Analysis
-pandas>=2.0.0
-numpy>=1.24.0
+pandas==2.1.0
+numpy==1.24.3
 
 # Natural Language Processing
-nltk>=3.8.0
-scikit-learn>=1.2.0
+nltk==3.8.1
+scikit-learn==1.3.0
 
 # Machine Learning & AI
-transformers>=4.30.0
-torch>=2.0.0
-tokenizers>=0.13.0
+transformers==4.34.0
+torch==2.1.0
+tokenizers==0.15.0
 
 # Date & Time Handling
-python-dateutil>=2.8.2
+python-dateutil==2.8.2
 
 # URL Handling
-urllib3>=1.26.0
+urllib3==2.0.7
 
 # Hash & Encoding
-hashlib-blake3>=1.1.1
+hashlib-blake3==1.1.1
