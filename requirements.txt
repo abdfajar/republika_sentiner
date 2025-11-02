@@ -1,5 +1,5 @@
 # Web Framework & UI
-streamlit==1.28.0
+streamlit==1.38.0
 
 # Web Scraping & HTTP
 requests==2.31.0
@@ -13,6 +13,9 @@ numpy<2.0
 scipy
 joblib
 threadpoolctl
+
+
+
 
 # Jika kamu pakai pandas, tambahkan:
 pandas>=1.5.0
